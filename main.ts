@@ -12,7 +12,7 @@ const DEFAULT_SETTINGS: MyPluginSettings = {
 
 export default class MyPlugin extends Plugin {  
     settings: MyPluginSettings;  
-
+//onload() 生命周期函数在用户激活 Obsidian 插件时触发。这将是您设置插件大部分功能的地方。该方法在插件更新时也会被触发。
     async onload() {  
         await this.loadSettings();  
 
@@ -78,7 +78,7 @@ export default class MyPlugin extends Plugin {
         // 注册间隔时，此函数将在插件被禁用时自动清除该间隔。  
         this.registerInterval(window.setInterval(() => console.log('setInterval'), 5 * 60 * 1000));  
     }  
-
+//onunload() 生命周期函数在插件被禁用时触发。插件所调用的任何资源必须在这里得到释放，以防止在您的插件被禁用后对 Obsidian 的性能产生影响。
     onunload() {  
         // 卸载插件时的逻辑  
     }  
@@ -123,9 +123,9 @@ class SampleSettingTab extends PluginSettingTab {
 
         new Setting(containerEl)  
             .setName('设置 #1')  
-            .setDesc('这是一个秘密')  
+            .setDesc('这是一个设置')  
             .addText(text => text  
-                .setPlaceholder('输入你的秘密')  
+                .setPlaceholder('输入你的设置')  
                 .setValue(this.plugin.settings.mySetting)  
                 .onChange(async (value) => {  
                     this.plugin.settings.mySetting = value;  

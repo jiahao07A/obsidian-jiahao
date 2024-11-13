@@ -1,10 +1,10 @@
 {
 	"id": "sample-plugin",
-	"name": "Sample Plugin",
+	"name": "插入一句古诗",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "Demonstrates some of the capabilities of the Obsidian API.",
-	"author": "Obsidian",
+	"description": "随机插入几句古诗,增加文学素养",
+	"author": "jiahao",
 	"authorUrl": "https://obsidian.md",
 	"fundingUrl": "https://obsidian.md/pricing",
 	"isDesktopOnly": false

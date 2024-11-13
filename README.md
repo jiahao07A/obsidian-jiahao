@@ -1,3 +1,6 @@
+# TODO list
+- [x] 引入React
+- [ ] 创建应用上下文
 # Obsidian Sample Plugin
 
 This is a sample plugin for Obsidian (https://obsidian.md).
